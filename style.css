@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background:linear-gradient(135deg,#5d44c3,#080220) fixed;
+ color: white;
+}
+.container{
+  margin: 12%;
+  width: 89%;
+  max-width: 700px;
+}
+.display{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: white;
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 5px;
+
+}
+.container h1{
+  font-weight: 500;
+  font-size: 45px;
+
+}
+.container h1 span{
+  color: #120159;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+.display img{
+  width: 30PX;
+  cursor: pointer;
+}
+.display input{
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
+.container button img{
+  width: 28px;
+  margin-right: 10px;
+}
+.container button{
+  border: 0;
+  outline: 0;
+  background: #120159;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 10%; /* Slightly reduced margins */
+    width: 90%; /* Use more screen space */
+    max-width: 600px;
+  }
+
+  .container h1 {
+    font-size: 38px; /* Smaller font size for headings */
+  }
+
+  .display {
+    /* flex-direction: column; Stack items on smaller screensflex-direction: column;  */
+    padding: 20px 15px;
+  }
+
+  .display input {
+    font-size: 22px; /* Slightly smaller font size */
+    width: 100%; /* Full-width input */
+  }
+
+  .display img {
+    width: 28px; /* Adjust icon size */
+  }
+
+  .container button {
+    font-size: 20px; /* Adjust button font size */
+    padding: 14px 24px;
+  }
+}
+
+/* Mobile Phones (Up to 767px) */
+@media (max-width: 767px) {
+  .container {
+    margin: 5%; /* Reduce margins for small screens */
+    width: 95%; /* Utilize most of the screen width */
+    max-width: 100%; /* Remove width limit */
+  }
+
+  .container h1 {
+    font-size: 30px; /* Compact heading size */
+    margin-top: 20px;
+
+  .display {
+    /* flex-direction: column; Stack input and icons */
+    padding: 10px 10px;
+  }
+
+  .display input {
+    font-size: 18px; /* Smaller text for input */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Space between input and icons */
+    width: 100%;
+  }
+
+  .display img {
+    width: 25px; /* Smaller icons */
+  }
+
+  .container button {
+    font-size: 18px; /* Smaller font size */
+    padding: 12px 20px; /* Compact button padding */
+    width: 100%; /* Full-width button */
+    margin-top: 15px; /* Add spacing */
+  }
+}
+
+/* Small Phones (Up to 480px) */
+@media (max-width: 480px) {
+  .container {
+    margin: 0 auto; /* Minimal margins */
+    width: 90%; /* Full-width container */
+  }
+
+  .container h1 {
+    font-size: 26px; /* Smaller font for headings */
+  }
+
+  .display input {
+    font-size: 16px; /* Reduce input font size */
+  }
+
+  .container button {
+    font-size: 16px; /* Compact button text */
+    padding: 10px 12px; /* Smaller button padding */
+  }
+}
